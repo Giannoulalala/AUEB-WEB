@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Questions</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="item1"><h2><a href="index.html"> Άλαν Τούρινγκ</a> </h2></div>
+       
+        <div class="item2"><h2>Menu</h2>
+            <ul>
+                
+                <li><a href="paidi.html"> Παιδική Ηλικία </a></li> <br>
+                <li><a href="spoudes.html"> Σπουδές</a></li> <br>
+
+                
+            </ul>
+
+
+
+
+        </div>
+        
+        <div class="item3">
+            <form id="survey-form" method="GET">
+                <div id="checklist-div" class="rowTab">
+                    <div id="form-outer">
+   
+    <h2>Ερωτησεις</h2>
+    <div id="question-div" class="rowTab">
+      <div id="name-label-div" class="labels">
+        <label id="name-label" for="name">
+          Τι Θα θέλατε να δείτε επιπλέον στη σελίδα μας
+          <br><small>*Required</small> 
+        </label>
+      </div>
+    <div id="question" class="rightTab">
+        <input id="question" autofocus type="text" name="question"  class="input-field" placeholder="Enter your suggestions" required>
+      </div>
+    </div>
+    <div id="email-div" class="rowTab">
+      <div id="email-label-div" class="labels">
+        <label id="email-label" for="email">
+          Email
+          <br><small>*Required</small> 
+        </label>
+      </div>
+      <div id="email-input" class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email address"required>
+      </div>
+    </div>
+    <div id="exp-dropdown-div" class="rowTab">
+      <div id="exp-dropdown-label" class="labels">
+        <label for="endiaferon">
+          Αλλα Αξιοτιμα πρόσωπα που θα θέλατε να δείτε
+        </label>
+    </div>
+      <div id="exp-dropdown-opts" class="rightTab">
+        <select id="dropdown" class="dropdown">
+          <option disabled value selected>
+            Select an option</option>
+          <option value="experienced">
+            Άντα Λάβλεϊς</option>
+          <option value="noExperience">
+            Τζον Τούρινγκ</option>
+          <option value="firstTime">
+            Τζούλιους Μάθισον Τούρινγκ</option>
+        </select>
+      </div>
+    </div>
+    <div id="lessons-div" class="rowTab">
+      <div id="lessons-label" class="labels">
+        <label id="number-label" for="lessons">
+          Ποσες Φορές την εβδομάδα επισκέπτεστε αυτόν τον ιστότοπο;
+        </label>
+      </div>
+      <div id="lessons-input"class="rightTab">
+        <input type="number" name="lesson" id="number" min="1" max="1000" class="input-field" placeholder="Number of Times">
+      </div>
+    </div>  
+    <div id="checklist-div" class="rowTab">  
+      <div id="checklist-label" class="labels">
+        <label for="checklist">
+         Ποιές ενότητες θα θέλατε να προστεθούν ακόμα;  
+        </label>
+      </div>
+      <div id="checklist-opts" class="rightTab">
+        <label class="container 1"> 
+          Οικογένεια Του Άλαν Τούρινγκ 
+          <input value="1" type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label class="container 2"> 
+          Συμβολή του στον 2ο Παγκόσμιο Πόλεμο  
+          <input value="2" type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label class="container 3"> 
+           Enigma
+          <input value="3" type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        
+      </div>
+    </div>
+    <div id="rate-radio-div" class="rowTab">
+      <div id="rate-radio-label" class="labels">
+        <label for="userRating">
+          Πως σας φάνηκε η περιήγηση;
+        </label>
+      </div>
+      <div id="rate-radio-opts" class="rightTab">
+        <ul id="rate-opts-list" style="list-style: none;">
+          <li id="opt-1" class="radio">
+            <label>1 - Πολύ Εύκολη
+              <input name="radio-buttons" value="1" type="radio" 
+>              
+            </label>            
+          </li>
+          <li id="opt-2" class="radio">
+            <label>2 - Σχετικά Εύκολη
+              <input name="radio-buttons" value="2" type="radio" 
+>
+            </label>
+          </li>
+          <li id="opt-3" class="radio">
+            <label>3 - Περίπλοκη
+              <input name="radio-buttons" value="3" type="radio" 
+>              
+            </label>            
+          </li>
+          <li id="opt-4" class="radio">
+            <label>4 - Δύσκολη
+              <input name="radio-buttons" value="4" type="radio">
+            </label>
+          </li>
+          <li id="opt-5" class="radio">
+            <label>5 - Πολύ Δύσκολη
+              <input name="radio-buttons" value="5" type="radio" >              
+            </label></li>
+        </ul>
+      </div>
+    </div>
+    <div id="comments-div" class="rowTab">
+      <div id="comments-label" class="labels">
+        <label for="comments">
+          Πείτε μας εαν σας δυσκόλεψε κάτι στην περιήγησή και αν ναι τι;
+        </label>
+      </div>
+      <div id="comments-input"class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter here..."></textarea>
+      </div>
+    </div>
+
+    <div id="question-div" class="rowTab">
+      <div id="name-label-div" class="labels">
+        <label id="name-label" for="name">
+          Θα συστήνατε τον ιστότοπο για μια εργασία η για ψυχαγωγια;
+          <br>
+        </label>
+      </div>
+    <div id="question" class="rightTab">
+        <input id="question" autofocus type="text" name="question"  class="input-field" placeholder="..." required>
+      </div>
+    </div>
+
+    <div id="question-div" class="rowTab">
+      <div id="name-label-div" class="labels">
+        <label id="name-label" for="name">
+          Θα συστήνατε τον ιστότοπο σε κάποιον γνωστό σας
+          <br>
+        </label>
+      </div>
+    <div id="question" class="rightTab">
+        <input id="question" autofocus type="text" name="question"  class="input-field" placeholder="Enter your suggestions" required>
+      </div>
+    </div>
+
+    <div id="question-div" class="rowTab">
+      <div id="name-label-div" class="labels">
+        <label id="name-label" for="name">
+          Τι κάνετε απόψε?
+          <br>
+        </label>
+      </div>
+    <div id="question" class="rightTab">
+        <input id="question" autofocus type="text" name="question"  class="input-field" placeholder="Enter your plans" required>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+       
+  </div>
+   
+   
+        <div class="item4"><h2>Related Articles</h2>
+            <ul>
+                <li> <a href="https://en.wikipedia.org/wiki/Joan_Clarke">Joan Clarke</a> </li> <br>
+                <li><a href="https://el.wikipedia.org/wiki/%CE%A4%CE%B6%CE%BF%CE%BD_%CF%86%CE%BF%CE%BD_%CE%9D%CF%8C%CE%B9%CE%BC%CE%B1%CE%BD"> Τζον φον Νόιμαν</a></li> <br>
+                <li><a href="https://el.wikipedia.org/wiki/%CE%A4%CF%83%CE%B1%CF%81%CE%BB%CF%82_%CE%9C%CF%80%CE%AC%CE%BC%CF%80%CE%B1%CF%84%CE%B6"> Τσαρλς Μπάμπατζ</a></li> <br>
+                
+            
+    
+    </ul> </div>
+
+        <div class="item5">
+            <footer> By Ioanna Tagari</footer> </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
